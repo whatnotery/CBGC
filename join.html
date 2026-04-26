@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Join • Cornbread Community Gun Club</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://db.onlinewebfonts.com/c/f9106072214d802b808df16a90f07e97?family=BARABARA-FINAL"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .font-barabara {
+                font-family: "BARABARA-FINAL";
+            }
+            .font-google-sans {
+                font-family: "Google Sans Code", monospace;
+            }
+        </style>
+        <link
+            rel="icon"
+            type="image/png"
+            href="/imgs/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/imgs/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/imgs/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
+    </head>
+    <body
+        class="w-full bg-orange-100 flex flex-col flex-wrap items-center md:pl-20 md:pt-20 pb-20"
+    >
+        <header
+            class="flex flex-col md:flex-row items-center px-4 md:px-0 w-full"
+        >
+            <img src="imgs/logo.png" class="w-64 pt-8" />
+            <h1
+                class="text-1xl md:inline md:text-5xl text-[#668413] font-barabara pl-10 hidden"
+            >
+                CORNBREAD COMMUNITY GUN CLUB
+            </h1>
+        </header>
+        <div
+            class="flex flex-col md:flex-row-reverse items-start md:items-end w-full max-w-4xl px-4 md:px-0"
+        >
+            <section
+                class="w-full md:w-3/4 py-8 md:pt-0 md:pl-10 md:pr-10 font-google-sans"
+            >
+                <form
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="space-y-6"
+                >
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="7d7664a9-c7bc-4daf-aeb0-e18f9762b7be"
+                    />
+                    <input
+                        type="hidden"
+                        name="from_name"
+                        value="CBGC Website"
+                    />
+                    <input
+                        type="hidden"
+                        name="subject"
+                        value="New Vetting Form"
+                    />
+
+                    <input
+                        type="hidden"
+                        name="redirect"
+                        value="https://cornbreadgun.club/thanks.html"
+                    />
+
+                    <!-- Name and Pronouns -->
+                    <div class="space-y-2">
+                        <label
+                            for="what_name_and_pronouns_do_you_use_required"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            What is your name and what pronouns do you use?
+                            <span class="text-[#668413]">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="what_name_and_pronouns_do_you_use_required"
+                            name="what_name_and_pronouns_do_you_use_required"
+                            required
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none"
+                            placeholder="e.g., Alex (they/them)"
+                        />
+                    </div>
+
+                    <div class="space-y-2">
+                        <label
+                            for="email"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            What is your email?
+                            <span class="text-[#668413]">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            required
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none"
+                            placeholder="your email address"
+                        />
+                    </div>
+
+                    <!-- How did you hear -->
+                    <div class="space-y-2">
+                        <label
+                            for="how_did_you_hear_about_the_cornbread_community_gun_club"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            How did you hear about the Cornbread Community Gun
+                            Club? <span class="text-[#668413]">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="how_did_you_hear_about_the_cornbread_community_gun_club"
+                            name="how_did_you_hear_about_the_cornbread_community_gun_club"
+                            required
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none"
+                            placeholder="Instagram, friend, event..."
+                        />
+                    </div>
+
+                    <!-- What do you hope to get -->
+                    <div class="space-y-2">
+                        <label
+                            for="what_do_you_hope_to_get_out_of_participation_with_CBGC"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            What do you hope to get out of participation with
+                            the CBGC? <span class="text-[#668413]">*</span>
+                        </label>
+                        <textarea
+                            id="what_do_you_hope_to_get_out_of_participation_with_CBGC"
+                            name="what_do_you_hope_to_get_out_of_participation_with_CBGC"
+                            required
+                            rows="3"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="Tell us what brings you here..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Political ideology -->
+                    <div class="space-y-2">
+                        <label
+                            for="how_would_you_describe_your_personal_political_ideology"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            How would you describe your personal political
+                            ideology? <span class="text-[#668413]">*</span>
+                        </label>
+                        <textarea
+                            id="how_would_you_describe_your_personal_political_ideology"
+                            name="how_would_you_describe_your_personal_political_ideology"
+                            required
+                            rows="3"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="Share as much or as little as you're comfortable with..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Previous political organizations -->
+                    <div class="space-y-2">
+                        <label
+                            for="have_you_ever_been_involved_in_any_political_organizations"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            Have you ever been involved in any political
+                            organizations? <span class="text-[#668413]">*</span>
+                        </label>
+                        <textarea
+                            id="have_you_ever_been_involved_in_any_political_organizations"
+                            name="have_you_ever_been_involved_in_any_political_organizations"
+                            required
+                            rows="3"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="If yes, please describe. If no, just put 'None' or 'N/A'"
+                        ></textarea>
+                    </div>
+
+                    <!-- Firearms experience -->
+                    <div class="space-y-2">
+                        <label
+                            for="do_you_have_any_previous_experience_with_firearms"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            Do you have any previous experience with firearms?
+                            If so, can you describe that experience?
+                            <span class="text-[#668413]">*</span>
+                        </label>
+                        <textarea
+                            id="do_you_have_any_previous_experience_with_firearms"
+                            name="do_you_have_any_previous_experience_with_firearms"
+                            required
+                            rows="3"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="e.g., None, hunting, range shooting, previous training..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Firearms Safety -->
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-gray-700">
+                            Are there any safety and/or legal reasons you should
+                            not be around firearms?
+                            <span class="text-[#668413]">*</span>
+                        </label>
+                        <div class="flex gap-6">
+                            <label
+                                class="flex items-center gap-2 cursor-pointer"
+                            >
+                                <input
+                                    type="radio"
+                                    name="are_there_safety_and_or_legal_reasons_you_should_not_be_around_firearms"
+                                    value="Yes"
+                                    required
+                                    class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                                />
+                                <span class="text-gray-700">Yes</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 cursor-pointer"
+                            >
+                                <input
+                                    type="radio"
+                                    name="are_there_safety_and_or_legal_reasons_you_should_not_be_around_firearms"
+                                    value="No"
+                                    required
+                                    class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                                />
+                                <span class="text-gray-700">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- If yes to above -->
+                    <div class="space-y-2">
+                        <label
+                            for="if_yes_to_the_above_please_explain"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            If yes to the above, please explain
+                        </label>
+                        <textarea
+                            id="if_yes_to_the_above_please_explain"
+                            name="if_yes_to_the_above_please_explain"
+                            rows="2"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="If no, you can leave this blank"
+                        ></textarea>
+                    </div>
+
+                    <!-- Military/law enforcement -->
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-gray-700">
+                            Are you now, or have you ever been, involved in any
+                            military or law enforcement organizations?
+                            <span class="text-[#668413]">*</span>
+                        </label>
+                        <div class="flex gap-6">
+                            <label
+                                class="flex items-center gap-2 cursor-pointer"
+                            >
+                                <input
+                                    type="radio"
+                                    name="are_you_now_or_have_you_ever_been_involved_in_any_military_or_law_enforcement_organizations"
+                                    value="Yes"
+                                    required
+                                    class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                                />
+                                <span class="text-gray-700">Yes</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 cursor-pointer"
+                            >
+                                <input
+                                    type="radio"
+                                    name="are_you_now_or_have_you_ever_been_involved_in_any_military_or_law_enforcement_organizations"
+                                    value="No"
+                                    required
+                                    class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                                />
+                                <span class="text-gray-700">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- If yes to above -->
+                    <div class="space-y-2">
+                        <label
+                            for="if_yes_to_the_above_please_explain_your_involvement"
+                            class="block text-sm font-bold text-gray-700"
+                        >
+                            If yes to the above, please explain your involvement
+                        </label>
+                        <textarea
+                            id="if_yes_to_the_above_please_explain_your_involvement"
+                            name="if_yes_to_the_above_please_explain_your_involvement"
+                            rows="2"
+                            class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                            placeholder="If no, you can leave this blank"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="pt-4">
+                        <button
+                            type="submit"
+                            class="w-full md:w-auto px-8 py-3 bg-[#668413] text-orange-100 font-google-sans text-lg hover:bg-[#557012] transition-colors duration-200 border-2 border-[#668413] hover:border-dashed"
+                        >
+                            SUBMIT
+                        </button>
+                    </div>
+
+                    <p class="text-xs text-gray-500 italic mt-4">
+                        * Required fields
+                    </p>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

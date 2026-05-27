@@ -1,0 +1,514 @@
+---
+layout: default
+---
+
+<div
+    class="flex flex-col md:flex-row-reverse items-start md:items-end w-full max-w-4xl px-4 md:px-0"
+>
+    <section
+        class="w-full md:w-3/4 py-8 md:pt-0 md:pl-10 md:pr-10 font-google-sans"
+    <p class="block text-lg font-bold text-gray-700">
+        CBGC is built by it's members, please fill out this brief survey so club
+        leadership can make sure we're leading the club in alignment with our
+        members goals and desires. All submissions are anonymous and will not be seen by anyone but club leadership
+    </p>
+
+        <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="space-y-6"
+        >
+            <input
+                type="hidden"
+                name="access_key"
+                value="cd0e7b45-9834-4e93-866c-7ecf83b4acdf"
+            />
+            <input type="hidden" name="from_name" value="CBGC Website" />
+            <input
+                type="hidden"
+                name="subject"
+                value="CBGC Membership Survey"
+            />
+
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://cornbreadgun.club/thanks.html"
+            />
+
+            <!-- Membership Value Scale -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    On a 4-point scale, 1 being the least valuable and 4 being
+                    the most valuable, how valuable is your membership to CBGC?
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <div class="flex flex-wrap gap-6">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership_value"
+                            value="1"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">1</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership_value"
+                            value="2"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">2</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership_value"
+                            value="3"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">3</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership_value"
+                            value="4"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">4</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Most valuable aspects -->
+            <div class="space-y-2">
+                <label
+                    for="valuable_aspects"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    What aspects would you say are most valuable in your
+                    experience?
+                </label>
+                <textarea
+                    id="valuable_aspects"
+                    name="valuable_aspects"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Please share what you find most valuable..."
+                ></textarea>
+            </div>
+
+            <!-- Increase value -->
+            <div class="space-y-2">
+                <label
+                    for="increase_value"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    What could be done to increase the value of your membership?
+                </label>
+                <textarea
+                    id="increase_value"
+                    name="increase_value"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Your suggestions here..."
+                ></textarea>
+            </div>
+
+            <!-- Activities enjoyed most (check all that apply) -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    What club activities have you enjoyed most? (check all that
+                    apply)
+                </label>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Group Chats"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Group Chats</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Planned Range days"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Planned Range days</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Planned Social Events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Planned Social Events</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Impromptu Range Days"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Impromptu Range Days</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Impromptu Social Events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Impromptu Social Events</span
+                        >
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Public Workshops (like the one held at Artfarm)"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Public Workshops (like the one held at
+                            Artfarm)</span
+                        >
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="enjoyed_activities"
+                            value="Small planned gatherings on non-gun topics (E.G. Cornbread Comms Club)"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Small planned gatherings on non-gun topics (E.G.
+                            Cornbread Comms Club)</span
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <!-- Activities to see more of (check all that apply) -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    What type of activities would you like to see more of?
+                    (check all that apply)
+                </label>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Group Chats"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Group Chats</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Planned Range days"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Planned Range days</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Planned Social Events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Planned Social Events</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Impromptu Range Days"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Impromptu Range Days</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Impromptu Social Events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Impromptu Social Events</span
+                        >
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Public Workshops (like the one held at Artfarm)"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Public Workshops (like the one held at
+                            Artfarm)</span
+                        >
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="more_activities"
+                            value="Small planned gatherings on non-gun topics (E.G. Cornbread Comms Club)"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >Small planned gatherings on non-gun topics (E.G.
+                            Cornbread Comms Club)</span
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <!-- Activities CBGC isn't doing -->
+            <div class="space-y-2">
+                <label
+                    for="new_activities"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Are there activities CBGC isn't doing you'd like to see us
+                    doing and if so, what?
+                </label>
+                <textarea
+                    id="new_activities"
+                    name="new_activities"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Tell us what new activities you'd like to see..."
+                ></textarea>
+            </div>
+
+            <!-- Engagement scale -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    On a 4-point scale, 1 being the least engaged and 4 being
+                    the most engaged, how engaged would you say you've been with
+                    the club?
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <div class="flex flex-wrap gap-6">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="engagement_level"
+                            value="1"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">1</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="engagement_level"
+                            value="2"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">2</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="engagement_level"
+                            value="3"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">3</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="engagement_level"
+                            value="4"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">4</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Increase engagement -->
+            <div class="space-y-2">
+                <label
+                    for="increase_engagement"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Are there things club leadership can do to increase your
+                    engagement? If so, what?
+                </label>
+                <textarea
+                    id="increase_engagement"
+                    name="increase_engagement"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Your suggestions here..."
+                ></textarea>
+            </div>
+
+            <!-- Aware of activities? -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    Do you feel like you're aware of when club activities are
+                    happening?
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <div class="flex gap-6">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="aware_of_activities"
+                            value="Y"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">Y</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="aware_of_activities"
+                            value="N"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">N</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Improve promotion (conditional visibility would need JS, but keeping simple per format) -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    If not, how could the club improve our promotion of events?
+                </label>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="promotion_improvements"
+                            value="More advanced notice"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">More advanced notice</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="promotion_improvements"
+                            value="More reminders"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">More reminders</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="promotion_improvements"
+                            value="Club calendar"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700">Club calendar</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="promotion_improvements"
+                            value="More opportunities to attend events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >More opportunities to attend events</span
+                        >
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name="promotion_improvements"
+                            value="More obvious location to check for planned events"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent rounded"
+                        />
+                        <span class="text-gray-700"
+                            >More obvious location to check for planned
+                            events</span
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <!-- Club culture -->
+            <div class="space-y-2">
+                <label
+                    for="club_culture"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Does the Club's culture meet your expectations? If not, how
+                    could we improve?
+                </label>
+                <textarea
+                    id="club_culture"
+                    name="club_culture"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Share your thoughts on club culture..."
+                ></textarea>
+            </div>
+
+            <!-- Any other thoughts -->
+            <div class="space-y-2">
+                <label
+                    for="other_thoughts"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Any other thoughts, feelings, or suggestions that you'd like
+                    to share?
+                </label>
+                <textarea
+                    id="other_thoughts"
+                    name="other_thoughts"
+                    rows="3"
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none resize-vertical"
+                    placeholder="Anything else you'd like us to know..."
+                ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="pt-4">
+                <button
+                    type="submit"
+                    class="w-full md:w-auto px-8 py-3 bg-[#668413] text-orange-100 font-google-sans text-lg hover:bg-[#557012] transition-colors duration-200 border-2 border-[#668413] hover:border-dashed"
+                >
+                    SUBMIT
+                </button>
+            </div>
+
+            <p class="text-xs text-gray-500 italic mt-4">* Required fields</p>
+        </form>
+    </section>
+</div>

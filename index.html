@@ -1,117 +1,37 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cornbread Community Gun Club • Lexington KY</title>
+---
+layout: default
+---
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link
-            href="https://db.onlinewebfonts.com/c/f9106072214d802b808df16a90f07e97?family=BARABARA-FINAL"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
-        <style>
-            .font-barabara {
-                font-family: "BARABARA-FINAL";
-            }
-            .font-google-sans {
-                font-family: "Google Sans Code", monospace;
-            }
-        </style>
-        <!-- Basic Meta Tags -->
-        <meta
-            name="description"
-            content="Cornbread Community Gun Club is a group of community focused, pan-leftist firearms enthusiasts and educators based in central KY."
-        />
-        <!-- OpenGraph / Facebook Meta Tags -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cornbreadgun.club" />
-        <meta property="og:title" content="Cornbread Community Gun Club" />
-        <meta
-            property="og:description"
-            content="Cornbread Community Gun Club is a group of community focused, pan-leftist firearms enthusiasts and educators based in central KY."
-        />
-        <meta property="og:image" content="imgs/preview.png" />
-        <meta
-            property="og:image:alt"
-            content="a logo featuring a yellow background, with green text saying Cornbread Community Gun Club wrapped in a half circle around crossed rifles and cast irons of cornbread with a red star at the bottom"
-        />
-        <meta property="og:site_name" content="Cornbread Community Gun Club" />
-        <meta property="og:locale" content="en_US" />
-
-        <link
-            rel="icon"
-            type="image/png"
-            href="/imgs/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/imgs/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/imgs/favicon/apple-touch-icon.png"
-        />
-        <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
-    </head>
-    <body
-        class="w-full bg-orange-100 flex flex-col flex-wrap items-center md:pl-20 md:pt-20"
-    >
-        <header class="flex flex-col md:flex-row items-center">
-            <img src="imgs/logo.png" class="w-64 pt-8" />
-            <h1
-                class="text-1xl md:inline md:text-5xl text-[#668413] font-barabara pl-10 hidden"
+<div class="flex flex-col md:flex-row-reverse items-center md:items-end">
+    <section class="w-3/4 pt-8 pb-4 md:pt-0 md:pl-10 md:pr-10 font-google-sans">
+        <p>
+            Cornbread Community Gun Club is a community focused, pan-leftist,
+            group of firearms enthusiasts and educators based in central KY. We
+            work to teach our community, especially the most marginalized among
+            us, to be safe, responsible, and effective firearms owners.
+        </p>
+        <br />
+        <p>
+            We offer community firearms training for folks interested in self &
+            community defense and from time to time we may offer additional
+            training in topics such as de-escalation, stop the bleed, and other
+            emergency preparedness skills
+        </p>
+        <br />
+        <p>
+            Reach us on Instagram <br />
+            <a
+                href="https://instagram.com/cornbreadgunclub"
+                class="hover:underline decoration-[#668413] decoration-dashed decoration-4 underline-offset-4"
+                >@cornbreadgunclub</a
+            ><br /><br />
+            or email <br />
+            <a
+                href="mailto:{{site.email}}"
+                class="hover:underline decoration-[#668413] decoration-dashed decoration-4 underline-offset-4"
+                >hello(at)cornbreadgun(dot)club</a
             >
-                CORNBREAD COMMUNITY GUN CLUB
-            </h1>
-        </header>
-        <div
-            class="flex flex-col md:flex-row-reverse items-center md:items-end"
-        >
-            <section
-                class="w-3/4 pt-8 pb-4 md:pt-0 md:pl-10 md:pr-10 font-google-sans"
-            >
-                <p>
-                    Cornbread Community Gun Club is a community focused,
-                    pan-leftist, group of firearms enthusiasts and educators
-                    based in central KY. We work to teach our community,
-                    especially the most marginalized among us, to be safe,
-                    responsible, and effective firearms owners.
-                </p>
-                <br />
-                <p>
-                    We offer community firearms training for folks interested in
-                    self & community defense and from time to time we may offer
-                    additional training in topics such as de-escalation, stop
-                    the bleed, and other emergency preparedness skills
-                </p>
-                <br />
-                <p>
-                    Reach us on Instagram <br />
-                    <a
-                        href="https://instagram.com/cornbreadgunclub"
-                        class="hover:underline decoration-[#668413] decoration-dashed decoration-4 underline-offset-4"
-                        >@cornbreadgunclub</a
-                    ><br /><br />
-                    or email <br />
-                    <a
-                        href="mailto:hello@cornbreadgun.club"
-                        class="hover:underline decoration-[#668413] decoration-dashed decoration-4 underline-offset-4"
-                        >hello(at)cornbreadgun(dot)club</a
-                    >
-                </p>
-            </section>
-            <img src="imgs/footer.png" class="pt-8 pb-4 md:w-72 md:h-auto" />
-        </div>
-    </body>
-</html>
+        </p>
+    </section>
+    {% include footer.html %}
+</div>

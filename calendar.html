@@ -43,7 +43,7 @@ layout: default
             >
             {% assign yesterday = 'now' | date: '%s' | minus: 86400 | date:
             '%Y-%m-%d' %} {% ical url: {{site.calendar}} after_date:
-            {{yesterday}} limit: 4 %}
+            {{yesterday}} limit: 4 in_time_zone: 'America/New_York %}
             <hr
                 class="border-[#668413] border-2 border-dotted my-4 rounded-lg"
             />
@@ -54,13 +54,11 @@ layout: default
                 @ {{ event.location }}
             </h2>
             <h2 class="font-google-sans text-xl mx-auto">
-                {{ event.start_time | in_time_zone: 'America/New_York' | date:
-                '%A %B %d' }}
+                {{ event.start_time | date: '%A %B %d' }}
             </h2>
             <h2 class="font-google-sans text-xl mx-auto pb-2">
-                {{ event.start_time | in_time_zone: 'America/New_York | date:
-                '%-I:%M%P' }} - {{ event.end_time | in_time_zone:
-                'America/New_York | date: '%-I:%M%P' }}
+                {{ event.start_time | date: '%-I:%M%P' }} - {{ event.end_time |
+                date: '%-I:%M%P' }}
             </h2>
             {% endical %}
             <hr

@@ -12,6 +12,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cornbreadgun.club" # the base hostname & protocol for your site, e.g. http://example.com
 calendar: https://calendar.proton.me/api/calendar/v1/url/Kyr8BDzJv7FIVI9yoaSWOtMOfJ957FVKsoYkF0nTJBvVgpn3ECAj70AaumX6TbixoIRT9vt_MNKdCTSwD4Kjyw==/calendar.ics?CacheKey=TRu4btW3wbaMzUZXEoXt4g%3D%3D&PassphraseKey=yDIHdyjRbW-E3IaKsGWI0Oop0DiiT6Vbr5agYGB4lA8%3D
+timezone: America/New_York
 plugins:
   - jekyll-ical-tag
 

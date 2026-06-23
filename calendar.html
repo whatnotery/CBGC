@@ -43,7 +43,7 @@ layout: default
             >
             {% assign yesterday = 'now' | date: '%s' | minus: 86400 | date:
             '%Y-%m-%d' %} {% ical url: {{site.calendar}} after_date:
-            {{yesterday}} limit: 4 in_time_zone: 'America/New_York %}
+            {{yesterday}} limit: 4 %}
             <hr
                 class="border-[#668413] border-2 border-dotted my-4 rounded-lg"
             />

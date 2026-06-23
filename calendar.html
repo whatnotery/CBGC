@@ -54,11 +54,13 @@ layout: default
                 @ {{ event.location }}
             </h2>
             <h2 class="font-google-sans text-xl mx-auto">
-                {{ event.start_time | date: '%A %B %d' }}
+                {{ event.start_time | in_time_zone: 'America/New_York' | date:
+                '%A %B %d' }}
             </h2>
             <h2 class="font-google-sans text-xl mx-auto pb-2">
-                {{ event.start_time | date: '%-I:%M%P' }} - {{ event.end_time |
-                date: '%-I:%M%P' }}
+                {{ event.start_time | in_time_zone: 'America/New_York | date:
+                '%-I:%M%P' }} - {{ event.end_time | in_time_zone:
+                'America/New_York | date: '%-I:%M%P' }}
             </h2>
             {% endical %}
             <hr

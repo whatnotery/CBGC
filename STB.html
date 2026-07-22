@@ -1,0 +1,138 @@
+---
+layout: default
+---
+
+<div
+    class="flex flex-col md:flex-row-reverse items-start md:items-end w-full max-w-4xl px-4 md:px-0"
+>
+    <section
+        class="w-full md:w-3/4 py-8 md:pt-0 md:pl-10 md:pr-10 font-google-sans"
+    >
+        <div class="mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+                Cornbread Gun Club Stop the Bleed Training
+            </h1>
+            <div class="bg-[#668413]/10 border-l-4 border-[#668413] p-4">
+                <p class="text-gray-700">
+                    <strong>📅 Date:</strong> August 8th, 2026<br />
+                    <strong>⏰ Time:</strong> 10:00 AM<br />
+                    <strong>📍 Location:</strong> ArtFarm
+                </p>
+            </div>
+        </div>
+
+        <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="space-y-6"
+        >
+            <input
+                type="hidden"
+                name="access_key"
+                value="72989803-bcb2-443a-8338-64e83f0732fd"
+            />
+            <input type="hidden" name="from_name" value="CBGC Website" />
+            <input
+                type="hidden"
+                name="subject"
+                value="Stop the Bleed Registration"
+            />
+
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://cornbreadgun.club/thanks.html"
+            />
+
+            <!-- Full Name -->
+            <div class="space-y-2">
+                <label
+                    for="full_name"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Full Name
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <input
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    required
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none"
+                    placeholder="e.g., Alex Johnson"
+                />
+            </div>
+
+            <!-- Email -->
+            <div class="space-y-2">
+                <label
+                    for="email"
+                    class="block text-sm font-bold text-gray-700"
+                >
+                    Email Address
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full p-3 bg-transparent border-2 border-[#668413] focus:outline-none focus:ring-2 focus:ring-[#668413] focus:ring-dashed rounded-none"
+                    placeholder="you@example.com"
+                />
+            </div>
+
+            <!-- Membership Affiliation -->
+            <div class="space-y-3">
+                <label class="block text-sm font-bold text-gray-700">
+                    Are you a member of?
+                    <span class="text-[#668413]">*</span>
+                </label>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="ArtFarm"
+                            required
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">ArtFarm</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="CBGC"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700">CBGC</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="Both"
+                            class="w-4 h-4 text-[#668413] focus:ring-[#668413] focus:ring-dashed border-2 border-[#668413] bg-transparent"
+                        />
+                        <span class="text-gray-700"
+                            >Both (ArtFarm &amp; CBGC)</span
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="pt-4">
+                <button
+                    type="submit"
+                    class="w-full md:w-auto px-8 py-3 bg-[#668413] text-orange-100 font-google-sans text-lg hover:bg-[#557012] transition-colors duration-200 border-2 border-[#668413] hover:border-dashed"
+                >
+                    REGISTER FOR TRAINING
+                </button>
+            </div>
+
+            <p class="text-xs text-gray-500 italic mt-4">* Required fields</p>
+        </form>
+    </section>
+</div>

@@ -9,7 +9,7 @@
     'https://chat.cornbreadgun.club/hooks/6ade7fd3ee1a7e7afa117b84/imXDRSEgr7AouNzqNjxhqfnPTGto7u5s69CyntvPnuJyZwJ4';
 
   // -------------------------------------------------------------------
-  // 2. Base payload (no attachments)
+  // 2. Base payload — no `attachments` (removed per spec)
   // -------------------------------------------------------------------
   const BASE_PAYLOAD = {
     alias: 'rocket.cat',
@@ -18,9 +18,11 @@
 
   // -------------------------------------------------------------------
   // 3. Human-readable labels
+  //    NOTE: '&' replaced with 'and' to avoid breaking the form parser
+  //          (some parsers split on '&' before URL-decoding).
   // -------------------------------------------------------------------
   const FIELD_LABELS = {
-    what_name_and_pronouns_do_you_use_required: 'Name & Pronouns',
+    what_name_and_pronouns_do_you_use_required: 'Name and Pronouns',
     email: 'Email',
     how_did_you_hear_about_the_cornbread_community_gun_club: 'Heard About CBGC',
     what_do_you_hope_to_get_out_of_participation_with_CBGC: 'Hopes for Participation',
@@ -53,7 +55,7 @@
         statusEl.className = 'text-sm text-gray-600';
       }
 
-      // -------- Collect fields --------
+      // -------- Collect fields into a plain object --------
       const formData = new FormData(form);
       const fields = {};
 
@@ -67,7 +69,7 @@
         }
       }
 
-      // -------- Build Markdown text --------
+      // -------- Build the readable Markdown text --------
       const readableText = Object.entries(fields)
         .filter(([, v]) => v !== '' && v != null)
         .map(([key, value]) => {
@@ -83,15 +85,18 @@
       };
 
       // -----------------------------------------------------------------
-      // 5. Send — CORS-safe path
+      // 5. Send — CORS-safe form-urlencoded, direct alias + text fields
       //
-      //   • Rocket.Chat's webhook returns no Access-Control-Allow-Origin,
-      //     so `application/json` triggers a preflight the browser cancels.
-      //   • Fix: send as application/x-www-form-urlencoded (a "simple"
-      //     request — no preflight), with the JSON wrapped in `payload=`,
-      //     which Rocket.Chat's webhook handler understands.
-      //   • mode:'no-cors' is required because the server still won't echo
-      //     the ACAO header back; the response arrives opaque.
+      //   • application/json would trigger a preflight OPTIONS that
+      //     Rocket.Chat does not answer with ACAO → browser blocks.
+      //   • application/x-www-form-urlencoded is a "simple" request
+      //     → no preflight.
+      //   • Do NOT wrap the JSON in `payload=` — Rocket.Chat does not
+      //     unwrap Slack-style payload params; it parses the form body
+      //     directly and requires `text` at the top level.
+      //   • mode: 'no-cors' is still required to accept the (headerless)
+      //     response. The response is opaque: status 0, ok false.
+      //     Success/failure is NOT observable here — check the channel.
       // -----------------------------------------------------------------
       try {
         const params = new URLSearchParams();
@@ -113,6 +118,7 @@
         }
         form.reset();
       } catch (error) {
+        // Only genuine network-layer failures reach here.
         console.error('[cbgc-form] Submission failed:', error);
         if (statusEl) {
           statusEl.textContent =

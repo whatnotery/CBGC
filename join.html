@@ -8,25 +8,11 @@ layout: default
     <section
         class="w-full md:w-3/4 py-8 md:pt-0 md:pl-10 md:pr-10 font-google-sans"
     >
-        <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="space-y-6"
-        >
-            <input
-                type="hidden"
-                name="access_key"
-                value="7d7664a9-c7bc-4daf-aeb0-e18f9762b7be"
-            />
-            <input type="hidden" name="from_name" value="CBGC Website" />
-            <input type="hidden" name="subject" value="New Vetting Form" />
-
-            <input
-                type="hidden"
-                name="redirect"
-                value="https://cornbreadgun.club/thanks.html"
-            />
-
+        <!--
+            action/method removed — submission is intercepted by cbgc-form.js.
+            The form still has an id so the script can attach to it.
+        -->
+        <form id="cbgcForm" class="space-y-6">
             <!-- Name and Pronouns -->
             <div class="space-y-2">
                 <label
@@ -267,6 +253,17 @@ layout: default
             </div>
 
             <p class="text-xs text-gray-500 italic mt-4">* Required fields</p>
+
+            <!-- Status message area (populated by JS) -->
+            <div
+                id="statusMessage"
+                class="text-sm"
+                role="status"
+                aria-live="polite"
+            ></div>
         </form>
     </section>
 </div>
+
+<!-- External submission logic -->
+<script src="assets/js/form.js" defer></script>
